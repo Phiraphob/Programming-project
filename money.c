@@ -5,7 +5,7 @@ int main(){
 
     //input
     int a ,d;
-    printf("Enter saving day: ");
+    printf("Enter saving per day: ");
     scanf("%d",&a);
     printf("Enter day: ");
     scanf("%d",&d);
