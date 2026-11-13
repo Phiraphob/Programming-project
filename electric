@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    float power_ofdevice;
+    printf("how many power of device (W): " );
+    scanf("%f",&power_ofdevice);
+
+    int hour_used;
+    printf("how many hour you use: " );
+    scanf("%d",&hour_used);
+
+    int day_used;
+    printf("how many day you used it:  " );
+    scanf("%d",&day_used);
+
+    float price_rate;
+    printf("please enter power price rate (THB/kWh):  " );
+    scanf("%f",&price_rate);
+
+    float total_energy = power_ofdevice*hour_used*day_used/1000 ;
+    float total_cost = total_energy*price_rate ;
+
+    printf("-----Electricity-----");
+    printf("Total energy = %.2f kWh\n",total_energy);
+    printf("Total cost = %.2f THB\n",total_cost)
+
+  return 0 ;
+}
