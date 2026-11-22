@@ -43,6 +43,26 @@ int main()
     printf("Enter English credit(0.0-2.0): ");
     scanf("%f",&f_c);
 
+    //Check score
+    if(a < 0 || a > 100 ||
+        b < 0 || b > 100 ||
+        c < 0 || c > 100 || 
+        d < 0 || d > 100 || 
+        f < 0 || f > 100){
+        printf("Error: Score must be between 0 and 100.\n");
+        return 1;
+    }
+
+    //Check credit
+    if(a_c < 0.0 || a_c > 2.0 ||
+        b_c < 0.0 || b_c > 2.0 ||
+        c_c < 0.0 || c_c > 2.0 || 
+        d_c < 0.0 || d_c > 2.0 || 
+        f_c < 0.0 || f_c > 2.0){
+        printf("Error: Credit must be between 0.0 and 2.0.\n");
+        return 1;
+    }
+
     //process
     float a_g;//Math Grade
     float b_g;//Chemical Grade
@@ -63,7 +83,7 @@ int main()
             a_g = 3.50;
         }
     }
-    if(a >= 80 && a <= 90){
+    if(a >= 80 && a < 90){
         if(a >= 85){
             printf("Grade Math B\n");
             a_g = 3.00;
@@ -72,7 +92,7 @@ int main()
             a_g = 2.50;
         }
     }
-    if(a >= 70 && a <= 80){
+    if(a >= 70 && a < 80){
         if(a >= 75){
             printf("Grade Math C\n");
             a_g = 2.00;
@@ -81,7 +101,7 @@ int main()
             a_g = 1.50;
         }
     }
-    if(a >= 60 && a <= 70){
+    if(a >= 60 && a < 70){
         if(a >= 65){
             printf("Grade Math D\n");
             a_g = 1.00;
@@ -101,7 +121,7 @@ int main()
             b_g = 3.50;
         }
     }
-    if(b >= 80 && b <= 90){
+    if(b >= 80 && b < 90){
         if(b >= 85){
             printf("Grade Chemical B\n");
             b_g = 3.00;
@@ -110,7 +130,7 @@ int main()
             b_g = 2.50;
         }
     }
-    if(b >= 70 && b <= 80){
+    if(b >= 70 && b < 80){
         if(b >= 75){
             printf("Grade Chemical C\n");
             b_g = 2.00;
@@ -119,7 +139,7 @@ int main()
             b_g = 1.50;
         }
     }
-    if(b >= 60 && b <= 70){
+    if(b >= 60 && b < 70){
         if(b >= 65){
             printf("Grade Chemical D\n");
             b_g = 1.00;
@@ -139,7 +159,7 @@ int main()
             c_g = 3.50;
         }
     }
-    if(c >= 80 && c <= 90){
+    if(c >= 80 && c < 90){
         if(c >= 85){
             printf("Grade Bio B\n");
             c_g = 3.00;
@@ -148,7 +168,7 @@ int main()
             c_g = 2.50;
         }
     }
-    if(c >= 70 && c <= 80){
+    if(c >= 70 && c < 80){
         if(c >= 75){
             printf("Grade Bio C\n");
             c_g = 2.00;
@@ -157,7 +177,7 @@ int main()
             c_g = 1.50;
         }
     }
-    if(c >= 60 && c <= 70){
+    if(c >= 60 && c < 70){
         if(c >= 65){
             printf("Grade Bio D\n");
             c_g = 1.00;
@@ -177,7 +197,7 @@ int main()
             d_g = 3.50;
         }
     }
-    if(d >= 80 && d <= 90){
+    if(d >= 80 && d < 90){
         if(d >= 85){
             printf("Grade Physics B\n");
             d_g = 3.00;
@@ -186,7 +206,7 @@ int main()
             d_g = 2.50;
         }
     }
-    if(d >= 70 && d <= 80){
+    if(d >= 70 && d < 80){
         if(d >= 75){
             printf("Grade Physics C\n");
             d_g = 2.00;
@@ -195,7 +215,7 @@ int main()
             d_g = 1.50;
         }
     }
-    if(d >= 60 && d <= 70){
+    if(d >= 60 && d < 70){
         if(d >= 65){
             printf("Grade Physics D\n");
             d_g = 1.00;
@@ -215,7 +235,7 @@ int main()
             f_g = 3.50;
         }
     }
-    if(f >= 80 && f <= 90){
+    if(f >= 80 && f < 90){
         if(f >= 85){
             printf("Grade English B\n");
             f_g = 3.00;
@@ -224,7 +244,7 @@ int main()
             f_g = 2.50;
         }
     }
-    if(f >= 70 && f <= 80){
+    if(f >= 70 && f < 80){
         if(f >= 75){
             printf("Grade English C\n");
             f_g = 2.00;
@@ -233,12 +253,12 @@ int main()
             f_g = 1.50;
         }
     }
-    if(f >= 60 && f <= 70){
+    if(f >= 60 && f < 70){
         if(f >= 65){
             printf("Grade English D\n");
             f_g = 1.00;
         }else{
-            printf("Grade English F\n");
+            printf("\nGrade English F\n");
             f_g = 0.00;
         }
     }
