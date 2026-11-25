@@ -74,25 +74,25 @@ int main()
     float total_credit = a_c + b_c + c_c + d_c + f_c;
 
     //Math grade
-    if(a >= 95){
+    if(a >= 80){
         a_g = 4.00;
         printf("Grade Math A\n");
-    }else if(a >= 90){
+    }else if(a >= 75){
         a_g = 3.50;
         printf("Grade Math B+\n");
-    }else if(a >= 85){
+    }else if(a >= 70){
         a_g = 3.00;
         printf("Grade Math B\n");
-    }else if(a >= 80){
+    }else if(a >= 65){
         a_g = 2.50;
         printf("Grade Math C+\n");
-    }else if(a >= 75){
+    }else if(a >= 60){
         a_g = 2.00;
         printf("Grade Math C\n");
-    }else if(a >= 60){
+    }else if(a >= 55){
         a_g = 1.50;
         printf("Grade Math D+\n");
-    }else if(a >= 55){
+    }else if(a >= 50){
         a_g = 1.00;
         printf("Grade Math D\n");
     }else{
@@ -101,25 +101,25 @@ int main()
     }
 
     //Chemical grade
-    if(b >= 95){
+    if(b >= 80){
         b_g = 4.00;
         printf("Grade Chemical A\n");
-    }else if(b >= 90){
+    }else if(b >= 75){
         b_g = 3.50;
         printf("Grade Chemical B+\n");
-    }else if(b >= 85){
+    }else if(b >= 70){
         b_g = 3.00;
         printf("Grade Chemical B\n");
-    }else if(b >= 80){
+    }else if(b >= 65){
         b_g = 2.50;
         printf("Grade Chemical C+\n");
-    }else if(b >= 75){
+    }else if(b >= 60){
         b_g = 2.00;
         printf("Grade Chemical C\n");
-    }else if(b >= 60){
+    }else if(b >= 55){
         b_g = 1.50;
         printf("Grade Chemical D+\n");
-    }else if(b >= 55){
+    }else if(b >= 50){
         b_g = 1.00;
         printf("Grade Chemical D\n");
     }else{
@@ -128,25 +128,25 @@ int main()
     }
 
     //Bio grade
-    if(c >= 95){
+    if(c >= 80){
         c_g = 4.00;
         printf("Grade Bio A\n");
-    }else if(c >= 90){
+    }else if(c >= 75){
         c_g = 3.50;
         printf("Grade Bio B+\n");
-    }else if(c >= 85){
+    }else if(c >= 70){
         c_g = 3.00;
         printf("Grade Bio B\n");
-    }else if(c >= 80){
+    }else if(c >= 65){
         c_g = 2.50;
         printf("Grade Bio C+\n");
-    }else if(c >= 75){
+    }else if(c >= 60){
         c_g = 2.00;
         printf("Grade Bio C\n");
-    }else if(c >= 60){
+    }else if(c >= 55){
         c_g = 1.50;
         printf("Grade Bio D+\n");
-    }else if(c >= 55){
+    }else if(c >= 50){
         c_g = 1.00;
         printf("Grade Bio D\n");
     }else{
@@ -155,25 +155,25 @@ int main()
     }
 
     //Physics grade
-    if(d >= 95){
+    if(d >= 80){
         d_g = 4.00;
         printf("Grade Physics A\n");
-    }else if(d >= 90){
+    }else if(d >= 75){
         d_g = 3.50;
         printf("Grade Physics B+\n");
-    }else if(d >= 85){
+    }else if(d >= 70){
         d_g = 3.00;
         printf("Grade Physics B\n");
-    }else if(d >= 80){
+    }else if(d >= 65){
         d_g = 2.50;
         printf("Grade Physics C+\n");
-    }else if(d >= 75){
+    }else if(d >= 60){
         d_g = 2.00;
         printf("Grade Physics C\n");
-    }else if(d >= 60){
+    }else if(d >= 55){
         d_g = 1.50;
         printf("Grade Physics D+\n");
-    }else if(d >= 55){
+    }else if(d >= 50){
         d_g = 1.00;
         printf("Grade Physics D\n");
     }else{
@@ -182,25 +182,25 @@ int main()
     }
 
     //English grade
-    if(f >= 95){
+    if(f >= 80){
         f_g = 4.00;
         printf("Grade English A\n");
-    }else if(f >= 90){
+    }else if(f >= 75){
         f_g = 3.50;
         printf("Grade English B+\n");
-    }else if(f >= 85){
+    }else if(f >= 70){
         f_g = 3.00;
         printf("Grade English B\n");
-    }else if(f >= 80){
+    }else if(f >= 65){
         f_g = 2.50;
         printf("Grade English C+\n");
-    }else if(f >= 75){
+    }else if(f >= 60){
         f_g = 2.00;
         printf("Grade English C\n");
-    }else if(f >= 60){
+    }else if(f >= 55){
         f_g = 1.50;
         printf("Grade English D+\n");
-    }else if(f >= 55){
+    }else if(f >= 50){
         f_g = 1.00;
         printf("Grade English D\n");
     }else{
